@@ -15,6 +15,6 @@ begin
 			d<=~data;
 end
 
-assign data_o=d;
+assign data_o=(d>>1)^d;
 
 endmodule
