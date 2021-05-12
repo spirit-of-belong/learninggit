@@ -10,6 +10,7 @@ initial	begin
 	data=0;
 	#100
 	rst=1;
+	#100
 	data=1;
 end
 
