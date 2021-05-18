@@ -5,6 +5,8 @@ module	test_git(
 				output							data_o
 );
 
+parameter canshu=8'd100;
+
 reg	d;
 reg rst1,rst2;
 
@@ -23,7 +25,7 @@ begin
 		if(!rst2)
 			d<=0;
 		else
-			d<=~data;
+			d<=data & canshu[7];
 end
 
 assign data_o=(d>>1)^d;
