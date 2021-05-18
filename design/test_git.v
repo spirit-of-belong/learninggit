@@ -5,7 +5,7 @@ module	test_git(
 				output							data_o
 );
 
-parameter canshu=8'd10;
+parameter canshu=8'd20;
 
 reg	d;
 reg rst1,rst2;
